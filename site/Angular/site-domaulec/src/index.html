@@ -47,8 +47,26 @@
                 <ul class="nav-menu">
                     <li class="menu-active"><a href="/Accueil" routerLinkActive=active>Accueil</a></li>
                     <li><a href="/Accueil#about-us" routerLinkActive=active>Qui Sommes-nous ?</a></li>
-                    <li><a href="/Accueil#services" routerLinkActive=active>Nos Services</a></li>
-                    <li><a href="/Accueil#screenshots" routerLinkActive=active>Nos références</a></li>
+                    <li class="menu-has-children"><a href="/Accueil#services" routerLinkActive=active>Services</a>
+                        <ul>
+                            <li>
+                                <a href="/Services/installation-electrique">Installation électrique</a>
+                            </li>
+                            <li>
+                                <a href="/Services/securite">Sécurité</a>
+                            </li>
+                            <li>
+                                <a href="/Services/surveillance">Surveillance</a>
+                            </li>
+                            <li>
+                                <a href="/Services/gestion-du-temps">Gestion du temps</a>
+                            </li>
+                            <li>
+                                <a href="/Services/installation-domotique">Installation domotique</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href="/Accueil#screenshots" routerLinkActive=active>Nos références</a></li> -->
                     <!-- <li><a routerLink="#team">Team</a></li> -->
                     <li><a href="/Accueil#pricing" routerLinkActive=active>Nos Produits</a></li>
                     <!-- <li class="menu-has-children"><a href="">Drop Down</a>
