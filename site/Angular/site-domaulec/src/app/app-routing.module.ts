@@ -9,8 +9,8 @@ import { ServicesComponent } from './components/services/services.component';
 import { SurveillanceComponent } from './components/services/surveillance/surveillance.component';
 
 const routes: Routes = [
-  {path:"Accueil",component:AccueilComponent},
-  {path:"Services",component:ServicesComponent,
+  {path:"accueil",component:AccueilComponent},
+  {path:"services",component:ServicesComponent,
       children:[
         {path:"securite",component:SecuriteComponent},
         {path:"installation-domotique",component:InstallationDomotiqueComponent},
@@ -19,7 +19,7 @@ const routes: Routes = [
         {path:"surveillance",component:SurveillanceComponent},
         {path:"",redirectTo:"Securite",pathMatch:'full'}
       ]},
-  {path:"",redirectTo:"/Accueil",pathMatch:'full'}
+  {path:"",redirectTo:"/accueil",pathMatch:'full'}
 ];
 
 @NgModule({
